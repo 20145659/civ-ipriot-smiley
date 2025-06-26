@@ -88,8 +88,8 @@ python3 main.py
 
    | Control Flow | File     | First line | Line range |
    |--------------|----------| ------ |------------|
-   | sequence     | smiley.py|def_init-(self):| 11-26      
-   | selection    | sad.py   | def __init__(self):       | 5-9        |
+   | sequence     | smiley.py|def_init-(self):| 11-28      
+   | selection    | sad.py   | if wide_open:       | 28-31      |
    | iteration    | happy.py | for pixel in eyes:       | 30-31      |
 
 4. Though everything in Python is an object, it is sometimes said to have four "primitive" types. Examining the three files `smiley.py`, `sad.py`, and `happy.py`, identify which of the following types are used in any of these files, and give an example of each (use an example from the code, if applicable, otherwise provide an example of your own):
@@ -143,14 +143,17 @@ python3 main.py
 
 1. What code style is used in the code? Is it likely to be the same as the code style used in the SenseHat? Give to reasons as to why/why not:
 
-> The smiley code uses PEP 8. 4-space indentation, lowercase_with_underscores for functions and variables (like draw_mouth), and capitalized names for classes (Smiley, Happy).
+> The smiley project code follows **PEP 8**, the official Python style guide. This is evident in:
 > 
-> Yes, it’s likely similar as the code style used in the SenseHat. 
+> - Use of **4-space indentation**.
+> - **snake_case** naming for functions and variables (e.g., `draw_mouth`, `dim_display`).
+> - **Capitalized class names** (e.g., `Smiley`, `Happy`, `Sad`).
+> - **Docstrings** in triple quotes and concise inline comments.
 > 
-> PEP 8 is the standard for Python, so SenseHat probably follows it too. 
-> 
->Using the same style makes the code easier to mix, read, and update.
-
+> As for the SenseHat library, it is not guaranteed to follow PEP 8 just because our code does. While it is likely that official or widely-used libraries like SenseHat follow some PEP 8 conventions for readability and community consistency, they are not required to do so.
+> #### Therefore:
+> - **No**, the SenseHat library does not have to follow PEP 8 simply because our project does.
+> - **But**, following PEP 8 in our own code improves **consistency**, **maintainability**, and makes it easier to integrate with other Python tools and libraries.
 2. List three aspects of this convention you see applied in the code.
 
 > Three aspects of PEP 8 style used in smiley.py: 
